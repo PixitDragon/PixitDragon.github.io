@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    body {
+        background-image: url("RepeatingTadpolesPond.png");
+        background-repeat: repeat;
+    }
+    #rcorners1 {
+        border-radius: 25px 100px;
+        background: rgb(0 0 0 / 0.7);
+        color: #fff;
+        padding: 50px;
+        margin: auto;
+        width: 50%;
+        height: 3840px;
+    }
+    #rcorners2 {
+        border-radius: 25px 100px;
+        background: rgb(0 0 0 / 0.7);
+        color: #fff;
+        padding: 20px;
+        margin: auto;
+        width: 30%;
+        height: 20px;
+    }
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    </style>
+</head>
+<body>
+
+<div id="rcorners1">
+    <h1 style="text-align: center;">I Made Pong</h1>
+    <p></p>
+    <h2 style="text-align: center;">Game Features:</h2>
+    <p style="text-align: center;">Paddles can be moved up and down with corresponding buttons</p>
+    <p style="text-align: center;">Score increases each time you defend your side</p>
+    <p style="text-align: center;">A really, really slow ball that (usually) reflects off the paddle when hit</p>
+    <p style="text-align: center;">A message on how to start the game that disappears when the game is started</p>
+    <p style="text-align: center;">A message that displays the winner when the game's over, or if the game tied</p>
+    <img src="Game1Start.png" alt="Start of game screen" class="center">
+    <p></p>
+    <h2 style="text-align: center;">The game works, most of the time. Problems I've encountered:</h2>
+    <p style="text-align: center;">Sometimes, the ball doesn't reflect, and it just ends up going through the paddle</p>
+    <p style="text-align: center;">If the ball gets hit at such a sharp angle that it hits the bottom of the screen before it hits the other paddle, the game ends</p>
+    <p style="text-align: center;">You have to reinstall the game to reset it</p>
+    <img src="Game1Code.png" alt="Game Code" class="center">
+    <p></p>
+    <h2 style="text-align: center;">Things Scratch Did Better:</h2>
+    <p style="text-align: center;">When app opened, begin this line of code</p>
+    <p style="text-align: center;">The change item color feature</p>
+    <p style="text-align: center;">The ability to put items anywhere, not just in a canvas box</p>
+    <p style="text-align: center;">A way for the ball to detect which paddle it hit, not just that the ball hit a paddle. Instead, I had to detect if each paddle collided with something to keep score</p>
+    <img src="ScratchDidItBetter.png" alt="Scratch FTW" class="center">
+    <p></p>
+    <h2 style="text-align: center;">Times App Inventor Annoyed Me:</h2>
+    <p style="text-align: center;">You dont right click on the items in the layers to rename them, you use the rename button    </p>
+    <p style="text-align: center;">Positive Y is down the screen. In Scratch, it was opposite. In the terminal working with a 2D array, it’s typically down too, but it still feels strange</p>
+    <p style="text-align: center;">I couldn't just put the buttons at the left and right of the screen, I had to make a Horizontal Arrangement and put empty buttons in it for spacing. Additionally, the line up on the App Inventor didn’t match the lineup I had on the phone</p>
+    <p style="text-align: center;">You can't click and hold the buttons to keep moving the paddles, you have to click them repeatedly.</p>
+    <img src="AppInventor.png" alt="Ugh" class="center">
+    <p></p>
+    <h2 style="text-align: center;">Things I Like About App Inventor:</h2>
+    <p style="text-align: center;">The blocks are set up in Object notation, with objectName.function, which I think is good for getting people used to coding syntax</p>
+    <img src="Game1Code.png" alt="Code!!" class="center">
+    <p></p>
+    <h2 style="text-align: center;">Emulator Adventures:</h2>
+    <p style="text-align: center;">My computer was unable to run the emulator from App Inventor, I tried running every package they provided, and each turned up fascinating errors such as (no such file, not in dyld cache). This led me down the rabbit hole of trying to update Dylib on my computer. Unfortunately, I was unable to do so, receiving a “ln: /usr/lib/libmysqlclient.18.dylib: Operation not permitted” message. I might have been able to solve it (not completely sure, I only know basic Unix) but I decided to try downloading another emulator instead to save time. I decided on Android Studio’s Android Emulator, since I figured the software by the company itself would probably be the best to use. It looked confusing to set up, but it was actually really easy. The instructions were listed twice on the website for some reason, making it look more complicated than it actually was.</p>
+    <img src="Game1Tie.png" alt="Tie screen" class="center">
+    <p></p>
+    <div id="rcorners2">
+        <div style="text-align:center">    
+            <a href="Pong_Final.apk" download>Download Game</a>
+        </div>
+    </div>
+    <p></p>
+    <div id="rcorners2">
+        <div style="text-align:center">    
+            <a href="index.html">Assignment 1</a>
+        </div>
+    </div>
+    <!--
+    <p></p> 
+    <div style="text-align:center">    
+        <a href="Assignment3.html">Assignment 3</a>
+    </div>
+     -->
+</div>
+</body>
+</html>
